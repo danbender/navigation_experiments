@@ -1,17 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Mono);
-
 html, body {
+  font-family: 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: 'PT Mono', sans-serif;
   -webkit-transition: all, 0.2s;
   -moz-transition: all, 0.2s;
   -o-transition: all, 0.2s;
   transition: all, 0.2s;
+  font-weight: 100;
 }
 
 .menu {
@@ -45,13 +44,19 @@ html, body {
   color: white;
   border: 1px solid #fff;
   padding: 1em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .menu .container .logo a:hover {
   background-color: #fff;
   color: #111;
-  tranistion: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .menu .container nav {
@@ -88,10 +93,32 @@ html, body {
   padding-bottom: 4px;
 }
 
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  font-weight: 100;
+  padding: 0.1em;
+  display: inline-block;
+  display: inline-block;
+  margin-right: 2em;
+  font-size: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+  letter-spacing:0.1em;
+}
+
+
+
+
 .shrink-fade {
   padding: .5em 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 
 
