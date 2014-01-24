@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="menu">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Fashion ID</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </nav>
+    </div>
+</div>
+
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"></script>
+  <script type="text/javascript">
+  $(window).scroll(function(){
+    if ($("body").scrollTop() > 150) {
+      $(".menu").addClass("shrink-fade");
+    } else {
+      $(".menu").removeClass("shrink-fade");
+    }
+  });
+  </script>
+
+
+
+
+  </body>
+  </html>
