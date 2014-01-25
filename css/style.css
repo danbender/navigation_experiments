@@ -107,7 +107,6 @@ input[type="search"] {
   padding: 0.1em;
   display: inline-block;
   display: inline-block;
-  margin-right: 2em;
   cursor: pointer;
   border-bottom: 1px solid #01da90;;
   letter-spacing:0.1em;
@@ -118,7 +117,6 @@ input[type="search"] {
    color: #01da90;
    font-size: 13px;
    text-transform: uppercase;
-
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -126,7 +124,6 @@ input[type="search"] {
    color: #01da90;
    font-size: 13px;
    text-transform: uppercase;
-
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
@@ -134,7 +131,6 @@ input[type="search"] {
    color: #01da90;
    font-size: 13px;
    text-transform: uppercase;
-
 }
 
 :-ms-input-placeholder {
@@ -142,16 +138,16 @@ input[type="search"] {
    color: #01da90;
    font-size: 13px;
    text-transform: uppercase;
-
 }
 
+/* Shrink nav bar on scroll */
 
-
-
-.shrink-fade {
+.shrinkNavBar {
   padding: .5em 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* Tiles */
 
 
 
