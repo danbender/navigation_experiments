@@ -155,7 +155,7 @@ input[type="search"] {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .menu .container .logo {
     float: none;
     text-align: center;
