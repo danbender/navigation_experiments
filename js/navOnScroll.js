@@ -1,7 +1,9 @@
 $(window).scroll(function(){
   if ($("body").scrollTop() > 150) {
-    $(".menu").addClass("shrinkNavBar");
+    $("#actionbar").addClass("shrinkActionBar");
+    $(".menu").addClass("shrinkMenu");
   } else {
-    $(".menu").removeClass("shrinkNavBar");
+    $("#actionbar").removeClass("shrinkActionBar");
+    $(".menu").removeClass("shrinkMenu");
   }
 });
