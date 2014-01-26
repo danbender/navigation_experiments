@@ -221,9 +221,7 @@ input[type="search"] {
 
 /* Nav Ende*/
 
-
 /* Tiles */
-
 
 ul {
   list-style-type: none
@@ -546,7 +544,7 @@ ul {
   -webkit-transform: rotateY(-90deg) translateZ(5em);
   -ms-transform: rotateY(-90deg) translateZ(5em);
   -o-transform: rotateY(-90deg) translateZ(5em);
-  transform: rotateY(-90deg) translateZ(5em)
+  transform: rotateY(-90deg) translateZ(5em);
 }
 
 .s-page {
@@ -597,13 +595,13 @@ ul {
   font-weight: 300;
   overflow: hidden;
   cursor: pointer;
-  position: relative;
-  background-color: #fff;
   color: #333;
   position: relative;
   -webkit-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out
+  transition: background-color 0.2s ease-out;
+  border: 1px solid  #000;
+  /*background-color: red !important;*/
 }
 
 .tile-2xbig {
@@ -628,7 +626,6 @@ ul {
   font-size: 1em;
   padding: 1em;
   text-align: left;
-  border: 1px solid #000;
 }
 
 .caption-bottom {
@@ -654,7 +651,7 @@ ul {
 
 .tile-small {
   width: 49%;
-  margin-right: 2%
+  margin-right: 1%
 }
 
 .tile-small.last {
@@ -675,7 +672,6 @@ ul {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  border: 1px solid #000;
 }
 
 .tile div p {
@@ -684,7 +680,7 @@ ul {
 }
 
 /*styling the individual tiles*/
-
+/*
 .tile-1 {
   background-color: #fff;
   color: #000;
@@ -765,7 +761,7 @@ ul {
 .tile-6 p span {
   margin-right: 1em
 }
-
+*/
 /* slide text inside tile up */
 
 .slideTextUp div:nth-child(2) {
@@ -816,7 +812,7 @@ ul {
   -ms-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
-  overflow: visible
+  /*overflow: visible*/
 }
 
 .faces {
@@ -846,28 +842,23 @@ ul {
   -o-backface-visibility: hidden;
   backface-visibility: hidden
 }
+
 .faces .front{/*default*/
-  background-color: #455962;
+  background-color: #fff;
   color: #ddd;
 }
 .rotate3dX .front {
-  background-color: #455962;
+  background-color: #000;
   color: #ddd
 }
 .rotate3dY .front {
-  background-color: #ddd;
+  background-color: green;
   color: #455962;
 }
 
 .faces .back {
-  background-color: #455962;
+  background-color: #red;
   color: #ddd
-}
-
-.front span {
-  display: inline-block;
-  font-size: 4em;
-  margin-top: .5em
 }
 
 .rotate3dY .back {
