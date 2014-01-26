@@ -13,22 +13,65 @@ html, body {
   font-weight: 100;
 }
 
+
+/* Action Bar */
+
+#actionbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #000;
+  font-size: 18px;
+}
+
+#actionbar ul {
+  width: 100%;
+  float: right;
+}
+
+#actionbar ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+
 /* Nav */
+
+  /*border-bottom: 4px solid #01da90;*/
+  /*background-color: #1E1E20;*/
 
 .menu {
   position: fixed;
-  top: 0;
+  top: 57px;
   width: 100%;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 1000;
-  border-bottom: 4px solid #01da90;
-  background-color: #1E1E20;
+  background-color: #fff;
   padding: 2em 0;
   position: fixed;
 }
+
+/* Shrink Action Bar and adjust menu on scroll */
+
+.shrinkActionBar {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 13px !important;
+}
+
+.shrinkMenu {
+  position: fixed;
+  top: 41px;
+  width: 100%;
+  padding: .5em 0;
+  background: rgba(248,248,248,0.9);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+}
+
 
 .menu .nav {
   max-width: 1200px;
@@ -45,8 +88,8 @@ html, body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
-  border: 1px solid #fff;
+  color: #000;
+  border: 1px solid #000;
   padding: 1em;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -76,7 +119,7 @@ html, body {
 
 .menu .nav nav ul li {
   float: left;
-  border-left: 1px solid #fff;
+  border-left: 1px solid #000;
   padding: 0 1em 0 1em;
 }
 
@@ -88,13 +131,13 @@ html, body {
 .menu .nav nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: #000;
   font-size: 13px;
   letter-spacing: 2px;
 }
 
 .menu .nav nav ul li a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
   padding-bottom: 4px;
 }
 
@@ -110,7 +153,7 @@ input[type="search"] {
   display: inline-block;
   display: inline-block;
   cursor: pointer;
-  border-bottom: 1px solid #01da90;;
+  border-bottom: 2px solid #01da90;;
   letter-spacing:0.1em;
 }
 
@@ -140,13 +183,6 @@ input[type="search"] {
    color: #01da90;
    font-size: 13px;
    text-transform: uppercase;
-}
-
-/* Shrink nav bar on scroll */
-
-.shrinkNavBar {
-  padding: .5em 0;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Media Queries Nav Bar */
@@ -587,11 +623,12 @@ ul {
 .tile-caption {
   position: absolute;
   z-index: 1;
-  background-color: #455962;
+  background-color: #fff;
   color: #fff;
   font-size: 1em;
   padding: 1em;
-  text-align: left
+  text-align: left;
+  border: 1px solid #000;
 }
 
 .caption-bottom {
@@ -637,7 +674,8 @@ ul {
   padding: 0 1em;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  border: 1px solid #000;
 }
 
 .tile div p {
@@ -648,62 +686,62 @@ ul {
 /*styling the individual tiles*/
 
 .tile-1 {
-  background-color: #56D9C9;
-  color: white
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-2 {
-  background-color: #455962;
-  color: white
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-2:hover {
-  background-color: white;
-  color: #455962
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-3 {
-  background-color: #ddd;
-  color: #455962
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-3:hover {
-  background-color: white;
-  color: #455962
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-5 {
-  background-color: #FCC120;
-  color: white
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-5:hover {
   background-color: #fff;
-  color: #FCC120
+  color: #000;
 }
 
 .tile-6 {
-  background-color: #3EC7F3;
-  color: white
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-7,
 .tile-8 {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .tile-10 {
-  background-color: #F0514A;
-  color: white
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-10:hover {
-  background-color: white;
-  color: #F0514A
+  background-color: #fff;
+  color: #000;
 }
 
 .tile-10 div {
-  text-align: left
+  text-align: left;
 }
 
 .tile-3 p {
