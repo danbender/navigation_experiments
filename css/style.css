@@ -59,7 +59,7 @@ html, body {
 /* Shrink Action Bar and adjust menu on scroll */
 
 .shrinkActionBar {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(40, 40, 40, 0.9) !important;
   font-size: 13px !important;
 }
 
@@ -68,10 +68,9 @@ html, body {
   top: 41px;
   width: 100%;
   padding: .5em 0;
-  background: rgba(248,248,248,0.9);
+  background: rgba(251,251,251,0.6) !important;
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
-
 
 .menu .nav {
   max-width: 1200px;
@@ -536,7 +535,6 @@ ul {
   color: white;
   z-index: 10;
   padding:10px;
-
   -webkit-transform-origin: 100% 0%;
   -ms-transform-origin: 100% 0%;
   -o-transform-origin: 100% 0%;
@@ -555,34 +553,42 @@ ul {
   font-weight: 300;
 }
 .page-content{
-  overflow-y:auto;
+  /*overflow-y:auto;*/
   max-height:100%;
   font-size:.6em;
   padding:.6em;
-  text-align:left;
+  text-align:center;
 }
+
 /*default colors just in case*/
 .s-page, .r-page{
+  margin-top: 150px;
   background-color: white;
   color:black;
 }
 .page-title {
   margin: .25em 0;
   font-weight: 100;
-  font-size: 3em;
+  font-size: 1em;
   text-align:center;
 }
 
 .close-button {
-  font-size: 1.5em;
+  font-size: 1em;
   width: 1em;
   height: 1em;
   position: absolute;
-  top: .75em;
-  right: .75em;
+  top: 1em;
+  font-weight: 100;
+  left: .75em;
   cursor: pointer;
   line-height: .8em;
-  text-align: center
+  text-align: center;
+  color: #282828 !important;
+}
+
+.clearfix {
+  margin-top: 5em;
 }
 
 .tile {
@@ -783,7 +789,7 @@ ul {
 /* slide text inside tile to the right*/
 
 .slideTextRight div:first-child {
-  left: -100%
+  left: -116%
 }
 
 .slideTextRight:hover div {
@@ -846,11 +852,11 @@ ul {
 
 .faces .front{/*default*/
   background-color: #fff;
-  color: #ddd;
+  color: #282828;;
 }
 .rotate3dX .front {
   background-color: #282828;
-  color: #ddd
+  color: #282828;
 }
 .rotate3dY .front {
   background-color: green;
@@ -859,7 +865,7 @@ ul {
 
 .faces .back {
   background-color: #red;
-  color: #ddd
+  color: #282828;
 }
 
 .rotate3dY .back {
@@ -957,13 +963,13 @@ input {
     width: 49%
   }
   .page-title{
-    font-size:2.5em;
+    font-size:1.5em;
   }
   .page-content{
     font-size:1em;
   }
   .close-button{
-    font-size:2em;
+    font-size: 1.2em;
   }
 }
 
@@ -984,7 +990,7 @@ input {
     margin-left: 2em
   }
   .page-title{
-    font-size:3.5em;
+    font-size:1.5em;
   }
 }
 
