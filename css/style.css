@@ -855,16 +855,16 @@ ul {
   color: #282828;;
 }
 .rotate3dX .front {
-  background-color: #282828;
+  background-color: #fff;
   color: #282828;
 }
 .rotate3dY .front {
-  background-color: green;
+  background-color: #fff;
   color: #455962;
 }
 
 .faces .back {
-  background-color: #red;
+  background-color: #fff;
   color: #282828;
 }
 
