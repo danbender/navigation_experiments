@@ -7,7 +7,7 @@
 
             if($this.hasClass('rotate3d')) {
               frontface = $this.find('.front');
-              bgcolor = frontface.css('background-color');
+              bgcolor = frontface.css('#fff');
               textColor = frontface.css('color');
             }
 
@@ -19,7 +19,7 @@
 
         $this.on('click',function(){
           $('.'+page).css({'background-color': bgcolor, 'color': textColor})
-                     .find('.close-button').css({'background-color': textColor, 'color': bgcolor});
+                     .find('.close-button').css({'background-color': 'textColor', 'color': bgcolor});
         });
     });
 
@@ -46,10 +46,12 @@
       if(pageType === "s-page"){
           fadeDashBoard();
           $('.'+page).addClass('slidePageInFromLeft').removeClass('slidePageBackLeft');
+          $("html, body").animate({ scrollTop: 0 }, "slow");
         }
         else{
           $('.'+page).addClass('openpage');
           fadeDashBoard();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
         }
     });
   });
