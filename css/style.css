@@ -46,14 +46,14 @@ html, body {
   position: fixed;
   top: 57px;
   width: 100%;
+  padding: 2em 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  z-index: 1000;
-  background-color: #fff;
-  padding: 2em 0;
-  position: fixed;
 }
 
 /* Shrink Action Bar and adjust menu on scroll */
@@ -600,8 +600,9 @@ ul {
   -webkit-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
-  border: 1px solid  #000;
-  /*background-color: red !important;*/
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
 
 .tile-2xbig {
