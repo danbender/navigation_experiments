@@ -23,6 +23,14 @@ html, body {
   width: 100%;
   background-color: #282828;
   font-size: 18px;
+  /*-webkit-transition: font 0.4s;
+  -moz-transition: font 0.4s;
+  -o-transition: font 0.4s;
+  transition: font 0.4s;*/
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 #actionbar ul {
