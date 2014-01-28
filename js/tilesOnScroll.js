@@ -8,3 +8,28 @@ $(function () {
     });
   });
 });
+
+
+// scroll back up
+
+// $("a[href='#top']").click(function() {
+//   $("html, body").animate({ scrollTop: 0 }, "slow");
+//   return false;
+// });
+
+// $(window).scroll(function() {
+//     if ($(this).scrollTop()) {
+//         $('#go_back_up_button').stop(true, true).fadeIn();
+//     } else {
+//         $('#toTop').stop(true, true).fadeOut();
+//     }
+// });
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
