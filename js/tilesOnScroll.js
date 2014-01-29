@@ -1,3 +1,5 @@
+// Fade out nav and action bar on scroll
+
 $(function () {
   var lastScroll;
   $(window).scroll(function () {
@@ -9,27 +11,20 @@ $(function () {
   });
 });
 
-
-// scroll back up
-
-// $("a[href='#top']").click(function() {
-//   $("html, body").animate({ scrollTop: 0 }, "slow");
-//   return false;
-// });
-
-// $(window).scroll(function() {
-//     if ($(this).scrollTop()) {
-//         $('#go_back_up_button').stop(true, true).fadeIn();
-//     } else {
-//         $('#toTop').stop(true, true).fadeOut();
-//     }
-// });
-
+// On scroll show back to top button
 
 $(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#toTop').fadeIn();
+    if ($(this).scrollTop() > 600) {
+        $('#toTop').fadeIn("slow", function() {
+        });
     } else {
         $('#toTop').fadeOut();
     }
+});
+
+// Listen for click, scroll up slowly
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
 });
