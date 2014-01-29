@@ -467,15 +467,16 @@ ul {
 
 
 .container {
+  margin: 0 auto;
   margin-top: 7em auto;
   padding: 2em .5em;
   width: 90%;
-  height: 100%;
+  height: auto;
   -webkit-perspective: 3300px;
   -ms-perspective: 3300px;
   -o-perspective: 3300px;
   perspective: 3300px;
-  position: relative
+  position: relative;
 }
 
 .tilesboard {
