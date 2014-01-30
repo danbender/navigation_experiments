@@ -67,10 +67,10 @@ html, body {
   z-index: 1000;
   background-color: #fff;
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
- /* -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;*/
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  -o-transition: padding 0.3s;
+  transition: padding 0.3s;
 }
 
 /* Shrink Action Bar and adjust menu on scroll */
@@ -467,15 +467,16 @@ ul {
 
 
 .container {
+  margin: 0 auto;
   margin-top: 7em auto;
   padding: 2em .5em;
   width: 90%;
-  height: 100%;
+  height: auto;
   -webkit-perspective: 3300px;
   -ms-perspective: 3300px;
   -o-perspective: 3300px;
   perspective: 3300px;
-  position: relative
+  position: relative;
 }
 
 .tilesboard {
@@ -1288,6 +1289,23 @@ input {
     opacity: 1
   }
 }
+
+
+
+/* hover on tiles expands tile image */
+/*.pic-image{
+     -webkit-transform: scale(1.1);
+             transform: scale(1.1);
+}
+.pic:hover .pic-image{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}*/
+
+
+
+
+
 
 
 
