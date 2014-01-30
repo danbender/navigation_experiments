@@ -629,13 +629,28 @@ ul {
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
 
-.tile-2xbig {
-  height: 16.15em;
-  width: 100%
+.tile-big {
+  width: 100%;
 }
 
-.tile-big {
-  width: 100%
+.tile-long {
+  width: 202%;
+}
+
+/* hacky solution to make tile-long work past borders of its column */
+.col3 .tile-big:nth-of-type(3) {
+  opacity: 0;
+}
+
+.tile-small {
+  width: 99%;
+  height: 9.75em;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+}
+
+.tile-small.last {
+  margin-right: 0
 }
 
 .tile img {
@@ -674,16 +689,6 @@ ul {
   left: 0
 }
 
-.tile-small {
-  width: 99%;
-  height: 9.75em;
-  margin-right: 0.5%;
-  margin-top: 0.5%;
-}
-
-.tile-small.last {
-  margin-right: 0
-}
 
 .tile div {
   position: absolute;
