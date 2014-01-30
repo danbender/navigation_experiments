@@ -706,92 +706,9 @@ ul {
   vertical-align: middle
 }
 
-/*styling the individual tiles*/
-/*
-.tile-1 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-2 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-2:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-3 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-3:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-5 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-5:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-6 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-7,
-.tile-8 {
-  background-color: #fff;
-}
-
-.tile-10 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-10:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-10 div {
-  text-align: left;
-}
-
-.tile-3 p {
-  font-size: 4em;
-  margin-top: .5em
-}
-
-.tile-5 p,
-.tile-6 p {
-  font-size: 2em
-}
-
-.tile-5 p span,
-.tile-6 p span {
-  font-size: 1.3em;
-  margin-right: .7em;
-  position: relative;
-  top: .15em
-}
-
-.tile-6 p span {
-  margin-right: 1em
-}
-*/
 /* slide text inside tile up */
 
-.slideTextUp div:nth-child(2) {
+/*.slideTextUp div:nth-child(2) {
   top: 100%
 }
 
@@ -801,7 +718,7 @@ ul {
   -o-transform: translateY(-100%);
   transform: translateY(-100%)
 }
-
+*/
 .tile-1 p {
   font-size: 1.3em
 }
@@ -832,94 +749,6 @@ ul {
   transform: translateX(-100%)
 }
 
-/* rotate tile in 3D*/
-
-.rotate3d {
-  -webkit-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  /*overflow: visible*/
-}
-
-.faces {
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -o-transition: -o-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: -ms-transform 1s;
-  transition: -o-transform 1s;
-  transition: transform 1s
-}
-
-.faces div {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden
-}
-
-.faces .front{/*default*/
-  background-color: #fff;
-  color: #282828;;
-}
-.rotate3dX .front {
-  background-color: #fff;
-  color: #282828;
-}
-.rotate3dY .front {
-  background-color: #fff;
-  color: #455962;
-}
-
-.faces .back {
-  background-color: #fff;
-  color: #282828;
-}
-
-.rotate3dY .back {
-  -webkit-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg )
-}
-
-.rotate3dX .back {
-  -webkit-transform: rotateX( 180deg );
-  -ms-transform: rotateX( 180deg );
-  -o-transform: rotateX( 180deg );
-  transform: rotateX( 180deg )
-}
-
-.back p {
-  padding: 2.5em 3em
-}
-
-.rotate3dY:hover .faces:hover {
-  -webkit-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg )
-}
-
-.rotate3dX:hover .faces:hover {
-  -webkit-transform: rotateX( 180deg );
-  -ms-transform: rotateX( 180deg );
-  -o-transform: rotateX( 180deg );
-  transform: rotateX( 180deg )
-}
-
 .s-page {
   height: 100%;
   width: 100%;
@@ -942,15 +771,6 @@ ul {
   margin: 2em auto;
   width: 300px
 }
-/*
-input {
-  display: block;
-  line-height: 40px;
-  padding: 0 10px;
-  width: 260px;
-  height: 40px;
-  float: left
-}*/
 
 #unlock-button {
   background: black;
@@ -1301,11 +1121,6 @@ input {
     -webkit-transform: scale(1);
             transform: scale(1);
 }*/
-
-
-
-
-
 
 
 
