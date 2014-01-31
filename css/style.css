@@ -582,14 +582,24 @@ ul {
 .s-page, .r-page{
   margin-top: 150px;
   background-color: white;
-  color:black;
+  color: #282828;
 }
 .page-title {
   margin: .25em 0;
   font-weight: 100;
   font-size: 1em;
   text-align:center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
+
+.page-title:hover, .page-title:focus, .page-title:active {
+  opacity: 1;
+}
+
+
 
 .close-button {
   font-size: 1em;
@@ -612,7 +622,7 @@ ul {
 .tile {
   float: left;
   margin: 0 auto 1%;
-  color: white;
+  color: #fff;
   font-size: 1.3em;
   text-align: center;
   height: 20em;
@@ -691,13 +701,7 @@ ul {
 
 
 .tile div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
   text-align: center;
   display: table;
   padding: 0 1em;
@@ -707,8 +711,19 @@ ul {
 }
 
 .tile div p {
-  display: table-cell;
-  vertical-align: middle
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  text-align: center;
+  font-size: 1.8em;
+  opacity: 0.5;
+  display: block;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tile div p:hover, .tile div p:focus, .tile div p:active {
+  opacity: 1;
 }
 
 /* slide text inside tile up */
@@ -1127,6 +1142,13 @@ ul {
             transform: scale(1);
 }*/
 
+iframe {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  overflow-y:hidden !important;
+
+}
 
 
 
