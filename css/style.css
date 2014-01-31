@@ -100,13 +100,17 @@ html, body {
 }
 
 .menu .nav .logo a {
+  padding: 0.7em;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
   color: #282828;
-  border: 1px solid #282828;
-  padding: 1em;
+  font-size: 1em;
+  opacity: 0.5;
+  font-weight: 400;
+  letter-spacing: 4px;
+  border: 2px solid #282828;
+  border-radius: 3px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -115,11 +119,7 @@ html, body {
 
 .menu .nav .logo a:hover {
   background-color: #fff;
-  color: #111;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  opacity: 1;
 }
 
 .menu .nav nav {
@@ -135,8 +135,18 @@ html, body {
 
 .menu .nav nav ul li {
   float: left;
-  border-left: 1px solid #282828;
   padding: 0 1em 0 1em;
+  opacity: 0.5;
+  border-left: 2px solid #282828;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu .nav nav ul li:hover, .menu .nav nav ul li:focus,
+.menu .nav nav ul li:active {
+  opacity: 1;
 }
 
 .menu .nav nav ul li:first-child,
@@ -155,6 +165,7 @@ html, body {
 .menu .nav nav ul li a:hover {
   border-bottom: 1px solid #282828;
   padding-bottom: 4px;
+  opacity: 1;
 }
 
 
