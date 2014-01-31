@@ -1,4 +1,4 @@
-html, body {
+html body {
   font-family: 'Helvetica', sans-serif;
   margin: 0 auto;
   padding: 0 auto;
@@ -6,10 +6,10 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: all, 0.3s;
-  -moz-transition: all, 0.3s;
-  -o-transition: all, 0.3s;
-  transition: all, 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   font-weight: 100;
 }
 
@@ -22,8 +22,8 @@ html, body {
   bottom: 2%;
   right: 2%;
   font-size: 40px;
-  color: rgba(0,0,0,.7);;
-  text-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.3);
+  color: rgba(0,0,0,.7);
+  /*text-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.3);*/
   display: none;
 }
 
@@ -85,7 +85,8 @@ html, body {
   top: 41px;
   width: 100%;
   padding: .5em 0;
-  background: rgba(251,251,251,0.6) !important;
+  /*background: rgba(251,251,251,0.6) !important;*/
+  background: rgba(255,255,255,0.8) !important;
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
 
@@ -100,13 +101,17 @@ html, body {
 }
 
 .menu .nav .logo a {
+  padding: 0.7em;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
   color: #282828;
-  border: 1px solid #282828;
-  padding: 1em;
+  font-size: 1em;
+  opacity: 0.5;
+  font-weight: 400;
+  letter-spacing: 4px;
+  border: 2px solid #282828;
+  border-radius: 3px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -115,11 +120,7 @@ html, body {
 
 .menu .nav .logo a:hover {
   background-color: #fff;
-  color: #111;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  opacity: 1;
 }
 
 .menu .nav nav {
@@ -135,8 +136,18 @@ html, body {
 
 .menu .nav nav ul li {
   float: left;
-  border-left: 1px solid #282828;
   padding: 0 1em 0 1em;
+  opacity: 0.5;
+  border-left: 2px solid #282828;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu .nav nav ul li:hover, .menu .nav nav ul li:focus,
+.menu .nav nav ul li:active {
+  opacity: 1;
 }
 
 .menu .nav nav ul li:first-child,
@@ -155,6 +166,7 @@ html, body {
 .menu .nav nav ul li a:hover {
   border-bottom: 1px solid #282828;
   padding-bottom: 4px;
+  opacity: 1;
 }
 
 
@@ -582,14 +594,24 @@ ul {
 .s-page, .r-page{
   margin-top: 150px;
   background-color: white;
-  color:black;
+  color: #282828;
 }
 .page-title {
   margin: .25em 0;
   font-weight: 100;
   font-size: 1em;
   text-align:center;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
+
+.page-title:hover, .page-title:focus, .page-title:active {
+  opacity: 1;
+}
+
+
 
 .close-button {
   font-size: 1em;
@@ -612,7 +634,7 @@ ul {
 .tile {
   float: left;
   margin: 0 auto 1%;
-  color: white;
+  color: #fff;
   font-size: 1.3em;
   text-align: center;
   height: 20em;
@@ -629,13 +651,28 @@ ul {
   box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
 }
 
-.tile-2xbig {
-  height: 16.15em;
-  width: 100%
+.tile-big {
+  width: 100%;
 }
 
-.tile-big {
-  width: 100%
+.tile-long {
+  width: 202%;
+}
+
+/* hacky solution to make tile-long work past borders of its column */
+.col3 .tile-big:nth-of-type(3) {
+  opacity: 0;
+}
+
+.tile-small {
+  width: 99%;
+  height: 9.75em;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+}
+
+.tile-small.last {
+  margin-right: 0
 }
 
 .tile img {
@@ -674,25 +711,9 @@ ul {
   left: 0
 }
 
-.tile-small {
-  width: 99%;
-  height: 9.75em;
-  margin-right: 0.5%;
-  margin-top: 0.5%;
-}
-
-.tile-small.last {
-  margin-right: 0
-}
 
 .tile div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
   text-align: center;
   display: table;
   padding: 0 1em;
@@ -702,96 +723,24 @@ ul {
 }
 
 .tile div p {
-  display: table-cell;
-  vertical-align: middle
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  text-align: center;
+  font-size: 1.8em;
+  opacity: 0.5;
+  display: block;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/*styling the individual tiles*/
-/*
-.tile-1 {
-  background-color: #fff;
-  color: #282828;
+.tile div p:hover, .tile div p:focus, .tile div p:active {
+  opacity: 1;
 }
 
-.tile-2 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-2:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-3 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-3:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-5 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-5:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-6 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-7,
-.tile-8 {
-  background-color: #fff;
-}
-
-.tile-10 {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-10:hover {
-  background-color: #fff;
-  color: #282828;
-}
-
-.tile-10 div {
-  text-align: left;
-}
-
-.tile-3 p {
-  font-size: 4em;
-  margin-top: .5em
-}
-
-.tile-5 p,
-.tile-6 p {
-  font-size: 2em
-}
-
-.tile-5 p span,
-.tile-6 p span {
-  font-size: 1.3em;
-  margin-right: .7em;
-  position: relative;
-  top: .15em
-}
-
-.tile-6 p span {
-  margin-right: 1em
-}
-*/
 /* slide text inside tile up */
 
-.slideTextUp div:nth-child(2) {
+/*.slideTextUp div:nth-child(2) {
   top: 100%
 }
 
@@ -801,7 +750,7 @@ ul {
   -o-transform: translateY(-100%);
   transform: translateY(-100%)
 }
-
+*/
 .tile-1 p {
   font-size: 1.3em
 }
@@ -832,94 +781,6 @@ ul {
   transform: translateX(-100%)
 }
 
-/* rotate tile in 3D*/
-
-.rotate3d {
-  -webkit-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  /*overflow: visible*/
-}
-
-.faces {
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 1s;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -o-transition: -o-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: -ms-transform 1s;
-  transition: -o-transform 1s;
-  transition: transform 1s
-}
-
-.faces div {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden
-}
-
-.faces .front{/*default*/
-  background-color: #fff;
-  color: #282828;;
-}
-.rotate3dX .front {
-  background-color: #fff;
-  color: #282828;
-}
-.rotate3dY .front {
-  background-color: #fff;
-  color: #455962;
-}
-
-.faces .back {
-  background-color: #fff;
-  color: #282828;
-}
-
-.rotate3dY .back {
-  -webkit-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg )
-}
-
-.rotate3dX .back {
-  -webkit-transform: rotateX( 180deg );
-  -ms-transform: rotateX( 180deg );
-  -o-transform: rotateX( 180deg );
-  transform: rotateX( 180deg )
-}
-
-.back p {
-  padding: 2.5em 3em
-}
-
-.rotate3dY:hover .faces:hover {
-  -webkit-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg )
-}
-
-.rotate3dX:hover .faces:hover {
-  -webkit-transform: rotateX( 180deg );
-  -ms-transform: rotateX( 180deg );
-  -o-transform: rotateX( 180deg );
-  transform: rotateX( 180deg )
-}
-
 .s-page {
   height: 100%;
   width: 100%;
@@ -942,15 +803,6 @@ ul {
   margin: 2em auto;
   width: 300px
 }
-/*
-input {
-  display: block;
-  line-height: 40px;
-  padding: 0 10px;
-  width: 260px;
-  height: 40px;
-  float: left
-}*/
 
 #unlock-button {
   background: black;
@@ -1302,10 +1154,22 @@ input {
             transform: scale(1);
 }*/
 
+iframe {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  overflow-y:hidden !important;
+}
 
+i {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
-
-
+i:hover, i:focus, i:active { opacity: 1; }
 
 
 
