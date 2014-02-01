@@ -1,0 +1,229 @@
+html { height: 100%; font-size: 100%;}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    /*font-weight: 100 !important;*/
+    color: #282828;
+    overflow: hidden !important;
+}
+
+a {
+	color: #282828;
+	text-decoration: none;
+}
+
+.main {
+	width: 90%;
+	max-width: 76em;
+	margin: 0 auto;
+	/*margin-top: 2.4em;*/
+	padding: 0 1.875em 3.125em 1.875em;
+}
+
+.rb-grid {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.rb-grid li {
+	width: 24%;
+	height: 15em;
+	margin: 0.5%;
+	background: #fff;
+	color: #282828;
+	display: block;
+	float: left;
+	padding: 1.6em;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+
+}
+
+.rb-grid li.rb-span-2 {
+	width: 49%;
+}
+
+.rb-grid li.rb-span-4 {
+	width: 99%;
+}
+
+.rb-grid li h3 {
+	font-size: 2.6em;
+	font-weight: 100;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.rb-grid li h3:hover, .rb-grid li h3:focus, .rb-grid li h3:active {
+	opacity: 1;
+}
+
+/*.rb-temp {
+	display: block;
+	font-size: 2em;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.rb-grid li:hover .rb-temp {
+	opacity: 1;
+}
+*/
+.rb-overlay {
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*margin-top: 2.7em;*/
+	height: 100%;
+	padding: 1%;
+	background-color: #fff;
+	z-index: -1;
+	pointer-events: none;
+	cursor: default;
+	border: 3px solid rgba(0,0,0,.1);
+	/*border-bottom: px solid #c4c4c4;*/
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	/*box-shadow: 0px 0px 16px rgba(50, 50, 50, 0.24);*/
+}
+
+.rb-close {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	width: 2em;
+	height: 2em;
+	text-indent: -9000px;
+	cursor: pointer;
+	z-index: 1000;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	opacity: 0.5;
+}
+
+.rb-close:hover, .rb-close:focus, .rb-close:active {
+	opacity: 1;
+}
+
+
+.rb-close::before {
+	content: '✖';
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 1.8em;
+	line-height: 1.6;
+	text-align: center;
+	text-indent: 0px;
+}
+
+.rb-week {
+	width: 100%;
+	height: 100%;
+}
+
+.rb-week div {
+	width: 10%;
+	/*height: 100%;*/
+	float: left;
+	position: relative;
+	padding: 3% 0;
+}
+
+.rb-week div:first-child {
+	width: 100%;
+}
+
+/*.rb-week span {
+	padding: 5% 0;
+	font-size: 2em;
+	font-weight: 100;
+	display: block;
+	margin: auto 0;
+	height: 30%;
+	width: 100%;
+	line-height: 0.8;
+}*/
+
+.rb-week span.subcategory {
+	font-weight: 700;
+	padding: 1% 10%;
+	font-size: 1em;
+	line-height: 1.2;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.rb-grid li .rb-week div {
+	background-color: #fff;
+}
+
+
+
+@media screen and (max-width: 63.125em) {
+
+	.rb-grid li,
+	.rb-grid li.rb-span-2,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 10em;
+		text-align: left;
+	}
+
+	.rb-grid li div {
+		text-align: center;
+	}
+}
+
+
+.subcategory, h3 {
+	/*color: #fff;*/
+	-webkit-transition: all 0.9s ease;
+	-moz-transition: all 0.9s ease;
+	transition: all 0.9s ease;
+}
+
