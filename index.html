@@ -32,176 +32,105 @@
 
 
   <div class="container">
-     <div class="s-page custom-page">
-        <div class="page-content">
-<!--           <h2 class="page-title">I am a page title</h2>
- -->          <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
-          <div class="close-button s-close-button">
-            <i class="fa fa-angle-left"></i>
-          </div>
-        </div>
+     <div class="s-page random-restored-page">
+        <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
+    <div class="close-button s-close-button"><i class="fa fa-angle-left"></i></div>
+  </div>
+  <div class="s-page custom-page">
+    <div class="page-content">
+      <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
+    </div>
+    <div class="close-button s-close-button"><i class="fa fa-angle-left"></i></div>
+  </div>
+  <div class="r-page random-r-page">
+
+    <div class="page-content">
+      <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
+    </div>
+    <div class="close-button r-close-button"><i class="fa fa-angle-left"></i></div>
+  </div>
+
+
+
+
+
+
+
+
+<!--each tile should specify what page type it opens (to determine which animation) and the corresponding page name it should open-->
+  <div class="tilesboard clearfix">
+    <ul class="tiles">
+      <div class="col1 clearfix">
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Jacken</span>
+          <div id="jacken"></div>
+        </li>
+        <li class="tile tile-big last" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Pullover & Strick</span>
+          <div id="PulloverStrickjacken"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Kleider</span>
+          <div id="Kleider"></div>
+        </li>
+         <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Tops</span>
+          <div id="Top"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Shirts</span>
+          <div id="Shirts"></div>
+        </li>
       </div>
-      <div class="s-page custom-page">
-        <div class="page-content">
-<!--           <h2 class="page-title">I am a page title</h2>
- -->          <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
-          <div class="close-button s-close-button">
-            <i class="fa fa-angle-left"></i>
-          </div>
-        </div>
+
+      <div class="col2 clearfix">
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Hosen</span>
+          <div id="Hosen"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Blazer</span>
+          <div id="Blazer"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Blusen</span>
+          <div id="Blusen"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Sweat-Mode</span>
+          <div id="Sweat-Mode"></div>
+        </li>
+        <li class="tile tile-big last" data-page-type="r-page" data-page-name="random-r-page">
+          <span>Boleros</span>
+          <div id="Boleros"></div>
+        </li>
       </div>
-      <div class="r-page random-r-page">
-        <div class="page-content">
-<!--           <h2 class="page-title">I am a page title</h2>
- -->          <iframe src="iframes/category_lvl2/category2.html" frameborder="0"></iframe>
-        </div>
-        <div class="close-button r-close-button">
-          <i class="fa fa-angle-left"></i>
-        </div>
+
+      <div class="col3 clearfix">
+
+        <li class="tile tile-big" data-page-type="s-page" data-page-name="custom-page">
+          <span>Jeans</span>
+          <div id="Jeans"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="s-page" data-page-name="custom-page">
+          <span>Lederjacken & -blazer</span>
+          <div id="LederjackenBlazer"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="custom-page" data-page-name="random-r-page">
+          <span>Hosenanzüge & Kostüme</span>
+          <div id="HosenanzuegeKostueme"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="s-page" data-page-name="custom-page">
+          <span>Westen</span>
+          <div id="Westen"></div>
+        </li>
+        <li class="tile tile-big" data-page-type="s-page" data-page-name="custom-page">
+          <span>Röcke</span>
+          <div id="Roecke"></div>
+        </li>
       </div>
-
-
-      <div class="tilesboard clearfix">
-        <ul class="tiles">
-          <div class="col1 clearfix">
-            <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big last" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-          </div>
-
-          <div class="col2 clearfix">
-             <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-long" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-small" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-small last" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-          </div>
-
-          <div class="col3 clearfix">
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-             <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="s-page" data-page-name ="custom-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-            <li class="tile tile-big last" data-page-type="r-page" data-page-name="random-r-page">
-              <div><p>Lorem Ipsum</p></div>
-            </li>
-          </div>
-        </ul>
-      </div><!--end tilesboard-->
+    </ul>
+  </div><!--end dashboard-->
   </div>
 
   <a href="#top" id='toTop'><i class="fa fa-angle-double-up"></i></a>
@@ -210,5 +139,6 @@
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="js/modernizr.custom.js"></script>
   <script type="text/javascript" src="js/tilesscript.js"></script>
+
 </body>
 </html>

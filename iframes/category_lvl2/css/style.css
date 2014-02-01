@@ -128,7 +128,7 @@ a {
 
 .rb-close {
 	position: absolute;
-	top: 1em;
+	top: 0em;
 	right: 1em;
 	width: 2em;
 	height: 2em;
@@ -147,8 +147,7 @@ a {
 
 
 .rb-close::before {
-	content: '✖';
-	font-weight: 100;
+	content: '×';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -227,3 +226,19 @@ a {
 	transition: all 0.9s ease;
 }
 
+iframe {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  overflow-y: hidden !important;
+}
+
+i {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+i:hover, i:focus, i:active { opacity: 1; }
