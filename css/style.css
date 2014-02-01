@@ -541,7 +541,6 @@ ul {
     opacity: 1
   }
 }
-
 .col1,
 .col2,
 .col3 {
@@ -613,11 +612,11 @@ ul {
 
 .close-button {
   position: absolute;
-  top: 1em;
+  top: 0.85em;
   left: -1em;
   width: 1em;
   height: 1em;
-  font-weight: 100;
+  font-weight: bold !important;
   font-size: 1em;
   cursor: pointer;
   line-height: .8em;
