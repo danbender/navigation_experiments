@@ -43,7 +43,7 @@ html body {
 }
 
 #actionbar ul {
-  width: 100%;
+width: 100%;
   float: right;
 }
 
@@ -63,7 +63,7 @@ html body {
   position: fixed;
   top: 57px;
   width: 100%;
-  padding: 1.5em 0;
+  padding: 1em 0;
   z-index: 1000;
   background-color: #fff;
   box-shadow: 0 2px 0 rgba(0,0,0,.1),0 2px 3px rgba(0,0,0,.1);
@@ -78,6 +78,7 @@ html body {
 .shrinkActionBar {
   background-color: rgba(40, 40, 40, 0.9) !important;
   font-size: 13px !important;
+
 }
 
 .shrinkMenu {
@@ -540,7 +541,6 @@ ul {
     opacity: 1
   }
 }
-
 .col1,
 .col2,
 .col3 {
@@ -610,15 +610,14 @@ ul {
 }
 
 
-
 .close-button {
-  font-size: 1em;
+  position: absolute;
+  top: 0.85em;
+  left: -1em;
   width: 1em;
   height: 1em;
-  position: absolute;
-  top: 1em;
-  font-weight: 100;
-  left: .75em;
+  font-weight: bold !important;
+  font-size: 1em;
   cursor: pointer;
   line-height: .8em;
   text-align: center;
@@ -658,9 +657,9 @@ ul {
 }
 
 /* hacky solution to make tile-long work past borders of its column */
-.col3 .tile-big:nth-of-type(3) {
+/*.col3 .tile-big:nth-of-type(3) {
   opacity: 0;
-}
+}*/
 
 .tile-small {
   width: 99%;
@@ -675,7 +674,7 @@ ul {
 
 .tile img {
   width: 100%;
-  height: 70%
+  height: 100%;
 }
 
 .tile-caption {
@@ -711,47 +710,148 @@ ul {
 
 
 .tile div {
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   display: table;
-  padding: 0 1em;
+  margin-top: -1em;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.tile div p {
-  /*display: table-cell;*/
-  /*vertical-align: middle;*/
-  text-align: center;
-  font-size: 1.8em;
-  opacity: 0.5;
+.tile span {
+  margin-top: 20px;
   display: block;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.5;
+  /*display: block;*/
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.tile div p:hover, .tile div p:focus, .tile div p:active {
+.tile span:hover, .tile span:focus, .tile span:active {
   opacity: 1;
 }
 
-/* slide text inside tile up */
 
-/*.slideTextUp div:nth-child(2) {
-  top: 100%
+/* Images */
+
+#jacken {
+  background-image: url(../images/jacken.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.slideTextUp:hover div {
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%)
+#PulloverStrickjacken {
+  background-image: url(../images/PulloverStrickjacken.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-*/
-.tile-1 p {
-  font-size: 1.3em
+
+#Kleider {
+  background-image: url(../images/Kleider.png);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
+#Top {
+  background-image: url(../images/Tops.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Shirts {
+  background-image: url(../images/Shirts.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Hosen {
+  background-image: url(../images/Hosen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Blazer {
+  background-image: url(../images/Blazer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Blusen {
+  background-image: url(../images/Blusen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Sweat-Mode {
+  background-image: url(../images/Sweat-Mode.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Boleros {
+  background-image: url(../images/Boleros.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#HosenanzuegeKostueme {
+  background-image: url(../images/HosenanzuegeKostueme.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Jeans {
+  background-image: url(../images/Jeans.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#LederjackenBlazer {
+  background-image: url(../images/LederjackenBlazer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Westen {
+  background-image: url(../images/Westen.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Roecke {
+  background-image: url(../images/Roecke.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* Scale on product images*/
+
+div li div {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+div li div:hover, div li div:active, div li div:focus {
+   -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
+}
+
+
+
+
+
 
 /* slide text inside tile to the right*/
 

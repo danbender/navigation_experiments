@@ -76,7 +76,7 @@
 //  Nav effect on scroll
 
 $(window).scroll(function(){
-  if ($("body").scrollTop() > 150) {
+  if ($("body").scrollTop() > 70) {
     $("#actionbar").addClass("shrinkActionBar");
     $(".menu").addClass("shrinkMenu");
   } else {
@@ -90,10 +90,10 @@ $(window).scroll(function(){
 $(function () {
   var lastScroll;
   $(window).scroll(function () {
-    lastScroll = window.scrollY;
+    lastScroll = window.scrollY/2;
     $('#actionbar,.menu').css({
-      // 'transform' : 'translate3d(0,' + lastScroll/2 + 'px,0)',
-      'opacity' : (100 - lastScroll/20)/100
+      'transform' : 'translate3d(0,-' + lastScroll/4 + 'px,0)'
+      // 'opacity' : (100 - lastScroll/5)/100
     });
   });
 });
