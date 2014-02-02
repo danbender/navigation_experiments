@@ -175,13 +175,15 @@ input[type="search"] {
   font-family: inherit;
   font-size: inherit;
   color: #fff;
-
   padding: 0.1em;
   display: inline-block;
   display: inline-block;
   cursor: pointer;
   border-bottom: 3px solid #01da90;;
   letter-spacing:0.1em;
+  -webkit-appearance:none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 ::-webkit-input-placeholder {
