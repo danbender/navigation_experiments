@@ -326,13 +326,6 @@ div, ul, li{
   }
 }
 
-
-#stepp1 {
-	background-image: url('../images/stepp1.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 #Grid li {
 	-webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -341,6 +334,8 @@ div, ul, li{
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #Grid li:hover {
@@ -352,9 +347,172 @@ div, ul, li{
 
 #Grid li span {
 	opacity: 1;
+	font-weight: 100;
+	font-size: 0.6em;
 	color: #282828;
 	background: rgba(255,255,255,0.8) !important;
 	z-index: 999999;
 	text-align: center;
 	display: block;
+}
+
+
+#stepp1 {
+	background-image: url('../images/stepp1.png');
+}
+
+#stepp2 {
+	background-image: url('../images/stepp2.jpg');
+}
+
+#stepp3 {
+	background-image: url('../images/stepp3.jpg');
+}
+
+#stepp4 {
+	background-image: url('../images/stepp4.jpg');
+}
+
+#outdoor1, #parka1 {
+	background-image: url('../images/outdoor1.jpg');
+}
+
+#outdoor2 {
+	background-image: url('../images/outdoor2.jpg');
+}
+
+#outdoor3 {
+	background-image: url('../images/outdoor3.jpg');
+}
+
+#outdoor4 {
+	background-image: url('../images/outdoor4.jpg');
+}
+
+#daunen1 {
+	background-image: url('../images/daunen1.jpg');
+}
+
+#daunen2 {
+	background-image: url('../images/daunen2.jpg');
+}
+
+#daunen3 {
+	background-image: url('../images/daunen3.jpg');
+}
+
+#daunen4 {
+	background-image: url('../images/daunen4.jpg');
+}
+
+#biker1, #leder2 {
+	background-image: url('../images/biker1.jpg');
+}
+
+#biker2, #leder3 {
+	background-image: url('../images/biker2.jpg');
+}
+
+#biker3, #leder4 {
+	background-image: url('../images/biker3.jpg');
+}
+
+#biker4 {
+	background-image: url('../images/biker4.jpg');
+}
+
+#leder1 {
+	background-image: url('../images/leder1.jpg');
+}
+
+#parka2 {
+	background-image: url('../images/parka2.jpg');
+}
+
+#parka3 {
+	background-image: url('../images/parka3.jpg');
+}
+
+#parka4 {
+	background-image: url('../images/parka4.jpg');
+}
+
+#funktion1 {
+	background-image: url('../images/funktion1.jpg');
+}
+
+#funktion2 {
+	background-image: url('../images/funktion2.jpg');
+}
+
+#funktion3 {
+	background-image: url('../images/funktion3.jpg');
+}
+
+#funktion4 {
+	background-image: url('../images/funktion4.jpg');
+}
+
+#caban1 {
+	background-image: url('../images/caban1.jpg');
+}
+
+#caban2 {
+	background-image: url('../images/caban2.jpg');
+}
+
+#caban3 {
+	background-image: url('../images/caban3.jpg');
+}
+
+#caban4 {
+	background-image: url('../images/caban4.jpg');
+}
+
+#field1 {
+	background-image: url('../images/field1.jpg');
+}
+
+#field2 {
+	background-image: url('../images/field2.jpg');
+}
+
+#field3 {
+	background-image: url('../images/field3.jpg');
+}
+
+#field4 {
+	background-image: url('../images/field4.jpg');
+}
+
+#premium1 {
+	background-image: url('../images/premium1.jpg');
+}
+
+#premium2 {
+	background-image: url('../images/premium2.jpg');
+}
+
+#premium3 {
+	background-image: url('../images/premium3.jpg');
+}
+
+#premium4 {
+	background-image: url('../images/premium4.jpg');
+}
+
+#jeans1 {
+	background-image: url('../images/jeans1.jpg');
+}
+
+#jeans2 {
+	background-image: url('../images/jeans2.jpg');
+}
+
+#jeans3 {
+	background-image: url('../images/jeans3.jpg');
+}
+
+#jeans4 {
+	background-image: url('../images/jeans4.jpg');
 }
