@@ -64,8 +64,8 @@ a {
 	cursor: pointer;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+  border-radius: 2px;
+  /*box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);*/
 
 }
 
@@ -90,19 +90,6 @@ a {
 	opacity: 1;
 }
 
-/*.rb-temp {
-	display: block;
-	font-size: 2em;
-	opacity: 0.5;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.rb-grid li:hover .rb-temp {
-	opacity: 1;
-}
-*/
 .rb-overlay {
 	opacity: 0;
 	position: fixed;
@@ -176,16 +163,6 @@ a {
 	width: 100%;
 }
 
-/*.rb-week span {
-	padding: 5% 0;
-	font-size: 2em;
-	font-weight: 100;
-	display: block;
-	margin: auto 0;
-	height: 30%;
-	width: 100%;
-	line-height: 0.8;
-}*/
 
 .rb-week span.subcategory {
 	font-weight: 700;
@@ -237,22 +214,6 @@ li:hover img, li:focus img, li:active img {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
-*/
-@media screen and (max-width: 63.125em) {
-
-	.rb-grid li,
-	.rb-grid li.rb-span-2,
-	.rb-grid li.rb-span-4 {
-		width: 100%;
-		height: 10em;
-		text-align: left;
-	}
-
-	.rb-grid li div {
-		text-align: center;
-	}
-}
-
 
 .subcategory, h3 {
 	/*color: #fff;*/
@@ -277,3 +238,88 @@ i {
 }
 
 i:hover, i:focus, i:active { opacity: 1; }
+
+
+@media screen and (max-width: 63.125em) {
+
+	.rb-grid li,
+	.rb-grid li.rb-span-2,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 10em;
+		text-align: left;
+	}
+
+	.rb-grid li div {
+		text-align: center;
+	}
+}
+
+
+/* SUB CATEGORY 2: GRID */
+
+
+/* -- DEFAULTS -- */
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* -- FLUID GRID STYLES -- */
+
+#Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+#Grid li{
+  display: inline-block;
+  width: 23%;
+  padding-top: 23%; /* Used instead of height to give elements fluid, width-based height */
+	box-shadow: none !important;
+	border-radius: 2px;
+}
+
+#Grid:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#Grid .placeholder{
+  padding: 0;
+}
+
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    padding-top: 31%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
+    padding-top: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 5%;
+  }
+}
