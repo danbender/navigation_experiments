@@ -247,10 +247,15 @@ li:hover img, li:focus img, li:active img {
 	.rb-grid li,
 	.rb-grid li.rb-span-2,
 	.rb-grid li.rb-span-4 {
-		width: 100%;
+		/*width: 100%;*/
 		height: 10em;
-		text-align: left;
+		/*text-align: left;*/
+    /*overflow: auto;*/
 	}
+
+  .rb-grid li span {
+    font-size: 0.7em;
+  }
 
 	.rb-grid li div {
 		text-align: center;
@@ -351,7 +356,8 @@ div, ul, li{
 	font-size: 0.6em;
 	color: #282828;
 	background: rgba(255,255,255,0.8) !important;
-	z-index: 999999;
+  border-radius: 2px;
+  z-index: 999999;
 	text-align: center;
 	display: block;
 }
