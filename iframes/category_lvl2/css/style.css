@@ -33,6 +33,25 @@ body {
     overflow: hidden !important;
 }
 
+iframe {
+  margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  overflow-y: hidden !important;
+}
+
+i {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+i:hover, i:focus, i:active { opacity: 1; }
+
+
+
 a {
 	color: #282828;
 	text-decoration: none;
@@ -42,7 +61,6 @@ a {
 	width: 90%;
 	max-width: 76em;
 	margin: 0 auto;
-	/*margin-top: 2.4em;*/
 	padding: 0 1.875em 3.125em 1.875em;
 }
 
@@ -64,8 +82,8 @@ a {
 	cursor: pointer;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);
+  border-radius: 2px;
+  /*box-shadow: 0 1px 0 rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.1);*/
 
 }
 
@@ -90,19 +108,6 @@ a {
 	opacity: 1;
 }
 
-/*.rb-temp {
-	display: block;
-	font-size: 2em;
-	opacity: 0.5;
-	-webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-}
-
-.rb-grid li:hover .rb-temp {
-	opacity: 1;
-}
-*/
 .rb-overlay {
 	opacity: 0;
 	position: fixed;
@@ -158,7 +163,7 @@ a {
 	text-align: center;
 	text-indent: 0px;
 }
-
+/*
 .rb-week {
 	width: 100%;
 	height: 100%;
@@ -166,7 +171,6 @@ a {
 
 .rb-week div {
 	width: 10%;
-	/*height: 100%;*/
 	float: left;
 	position: relative;
 	padding: 3% 0;
@@ -174,23 +178,15 @@ a {
 
 .rb-week div:first-child {
 	width: 100%;
-}
-
-/*.rb-week span {
-	padding: 5% 0;
-	font-size: 2em;
-	font-weight: 100;
-	display: block;
-	margin: auto 0;
-	height: 30%;
-	width: 100%;
-	line-height: 0.8;
 }*/
 
-.rb-week span.subcategory {
+
+.rb-week div span.subcategory {
+	margin-top: 10%;
+	margin-bottom: 10%;
 	font-weight: 700;
 	padding: 1% 10%;
-	font-size: 1em;
+	font-size: 2em;
 	line-height: 1.2;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -205,7 +201,8 @@ a {
   /*margin-top: 20px;*/
   display: block;
   font-size: 1.3em;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  letter-spacing: 1px;
   text-transform: uppercase;
   opacity: 0.5;
   /*display: block;*/
@@ -237,7 +234,14 @@ li:hover img, li:focus img, li:active img {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
-*/
+
+.subcategory, h3 {
+	/*color: #fff;*/
+	-webkit-transition: all 0.9s ease;
+	-moz-transition: all 0.9s ease;
+	transition: all 0.9s ease;
+}
+
 @media screen and (max-width: 63.125em) {
 
 	.rb-grid li,
@@ -254,26 +258,261 @@ li:hover img, li:focus img, li:active img {
 }
 
 
-.subcategory, h3 {
-	/*color: #fff;*/
-	-webkit-transition: all 0.9s ease;
-	-moz-transition: all 0.9s ease;
-	transition: all 0.9s ease;
+/* SUB CATEGORY 2: GRID */
+
+
+/* -- DEFAULTS -- */
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-iframe {
-  margin: 0 auto;
+/* -- FLUID GRID STYLES -- */
+
+#Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#Grid li{
+  display: inline-block;
+  width: 23%;
+  padding-top: 33%; /* Used instead of height to give elements fluid, width-based height */
+	box-shadow: none !important;
+	border-radius: 2px;
+}
+
+#Grid:after{
+  content: '';
+  display: inline-block;
   width: 100%;
-  height: 1000px;
-  overflow-y: hidden !important;
 }
 
-i {
-  opacity: 0.5;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+#Grid .placeholder{
+  padding: 0;
 }
 
-i:hover, i:focus, i:active { opacity: 1; }
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    padding-top: 31%;
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
+    padding-top: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #Grid li{
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+#Grid li {
+	-webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#Grid li:hover {
+	-webkit-transform: scale(0.97);
+  -moz-transform: scale(0.97);
+  -o-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+#Grid li span {
+	opacity: 1;
+	font-weight: 100;
+	font-size: 0.6em;
+	color: #282828;
+	background: rgba(255,255,255,0.8) !important;
+	z-index: 999999;
+	text-align: center;
+	display: block;
+}
+
+
+#stepp1 {
+	background-image: url('../images/stepp1.png');
+}
+
+#stepp2 {
+	background-image: url('../images/stepp2.jpg');
+}
+
+#stepp3 {
+	background-image: url('../images/stepp3.jpg');
+}
+
+#stepp4 {
+	background-image: url('../images/stepp4.jpg');
+}
+
+#outdoor1, #parka1 {
+	background-image: url('../images/outdoor1.jpg');
+}
+
+#outdoor2 {
+	background-image: url('../images/outdoor2.jpg');
+}
+
+#outdoor3 {
+	background-image: url('../images/outdoor3.jpg');
+}
+
+#outdoor4 {
+	background-image: url('../images/outdoor4.jpg');
+}
+
+#daunen1 {
+	background-image: url('../images/daunen1.jpg');
+}
+
+#daunen2 {
+	background-image: url('../images/daunen2.jpg');
+}
+
+#daunen3 {
+	background-image: url('../images/daunen3.jpg');
+}
+
+#daunen4 {
+	background-image: url('../images/daunen4.jpg');
+}
+
+#biker1, #leder2 {
+	background-image: url('../images/biker1.jpg');
+}
+
+#biker2, #leder3 {
+	background-image: url('../images/biker2.jpg');
+}
+
+#biker3, #leder4 {
+	background-image: url('../images/biker3.jpg');
+}
+
+#biker4 {
+	background-image: url('../images/biker4.jpg');
+}
+
+#leder1 {
+	background-image: url('../images/leder1.jpg');
+}
+
+#parka2 {
+	background-image: url('../images/parka2.jpg');
+}
+
+#parka3 {
+	background-image: url('../images/parka3.jpg');
+}
+
+#parka4 {
+	background-image: url('../images/parka4.jpg');
+}
+
+#funktion1 {
+	background-image: url('../images/funktion1.jpg');
+}
+
+#funktion2 {
+	background-image: url('../images/funktion2.jpg');
+}
+
+#funktion3 {
+	background-image: url('../images/funktion3.jpg');
+}
+
+#funktion4 {
+	background-image: url('../images/funktion4.jpg');
+}
+
+#caban1 {
+	background-image: url('../images/caban1.jpg');
+}
+
+#caban2 {
+	background-image: url('../images/caban2.jpg');
+}
+
+#caban3 {
+	background-image: url('../images/caban3.jpg');
+}
+
+#caban4 {
+	background-image: url('../images/caban4.jpg');
+}
+
+#field1 {
+	background-image: url('../images/field1.jpg');
+}
+
+#field2 {
+	background-image: url('../images/field2.jpg');
+}
+
+#field3 {
+	background-image: url('../images/field3.jpg');
+}
+
+#field4 {
+	background-image: url('../images/field4.jpg');
+}
+
+#premium1 {
+	background-image: url('../images/premium1.jpg');
+}
+
+#premium2 {
+	background-image: url('../images/premium2.jpg');
+}
+
+#premium3 {
+	background-image: url('../images/premium3.jpg');
+}
+
+#premium4 {
+	background-image: url('../images/premium4.jpg');
+}
+
+#jeans1 {
+	background-image: url('../images/jeans1.jpg');
+}
+
+#jeans2 {
+	background-image: url('../images/jeans2.jpg');
+}
+
+#jeans3 {
+	background-image: url('../images/jeans3.jpg');
+}
+
+#jeans4 {
+	background-image: url('../images/jeans4.jpg');
+}
