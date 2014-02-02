@@ -1,3 +1,14 @@
+// Click on nav (Damen) shows tiles
+
+$(document).ready(
+  function() {
+    $(".tilesboard").hide();
+    $("#nav_ladies").click(function() {
+        $(".tilesboard").fadeToggle("slow");
+  });
+});
+
+
 // Tiles behavior
 
 (function(){
