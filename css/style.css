@@ -61,7 +61,7 @@ width: 100%;
 
 .menu {
   position: fixed;
-  top: 57px;
+  top: 50px;
   width: 100%;
   padding: 1em 0;
   z-index: 1000;
