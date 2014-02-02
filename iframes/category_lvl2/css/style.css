@@ -182,7 +182,8 @@ a {
   /*margin-top: 20px;*/
   display: block;
   font-size: 1.3em;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  letter-spacing: 1px;
   text-transform: uppercase;
   opacity: 0.5;
   /*display: block;*/
