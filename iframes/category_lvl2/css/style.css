@@ -219,20 +219,20 @@ li img {
 	height: 100%;
 	background-repeat: no-repeat;
   background-position: center center;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
 li:hover img, li:focus img, li:active img {
-	-webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transform: scale(1.02);
+	-webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
 
 .subcategory, h3 {
@@ -247,10 +247,12 @@ li:hover img, li:focus img, li:active img {
 	.rb-grid li,
 	.rb-grid li.rb-span-2,
 	.rb-grid li.rb-span-4 {
-		width: 100%;
 		height: 10em;
-		text-align: left;
 	}
+
+  .rb-grid li span {
+    font-size: 0.7em;
+  }
 
 	.rb-grid li div {
 		text-align: center;
@@ -351,7 +353,8 @@ div, ul, li{
 	font-size: 0.6em;
 	color: #282828;
 	background: rgba(255,255,255,0.8) !important;
-	z-index: 999999;
+  border-radius: 2px;
+  z-index: 999999;
 	text-align: center;
 	display: block;
 }
