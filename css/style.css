@@ -23,7 +23,6 @@ html body {
   right: 4%;
   font-size: 40px;
   color: rgba(0,0,0,.7);
-  /*text-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.3);*/
   display: none;
 }
 
@@ -55,9 +54,6 @@ width: 100%;
 }
 
 /* Nav */
-
-  /*border-bottom: 4px solid #01da90;*/
-  /*background-color: #1E1E20;*/
 
 .menu {
   position: fixed;
